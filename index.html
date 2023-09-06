@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="grid place-items-center h-screen box-border bg-gray-500 xl:bg-white">
+        <form class="flex flex-col p-7 text-center items-center xl:bg-gray-500 xl:rounded-xl">
+            <h1 class="text-white font-bold text-xl mb-10">Calculadora de Metragem - Bobina De Cabos</h1>
+            <label class="text-white font-bold text-xl mb-2" for="peso">Peso por m²</label>
+            <input class="border w-fit rounded mb-5 px-2" type="number" name="" id="peso">
+    
+            <label class="text-white font-bold text-xl mb-2" for="roloMetragem">Metragem total do rolo de cabos</label>
+            <input class="border w-fit rounded mb-5 px-2" type="number" name="" id="roloMetragem">
+    
+            <label class="text-white font-bold text-xl mb-2" for="pesoBobina">Peso da Bobina</label>
+            <input class="border w-fit rounded mb-5 px-2" type="number" name="" id="pesoBobina">
+    
+            <button id="calc" class="w-fit border rounded p-2 bg-blue-500 text-white font-bold mb-7">Calcular</button>
+    
+            <div class="flex justify-center items-center border w-[300px] h-[200px] text-white font-bold rounded text-7xl" id="result"></div>
+        </form>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
